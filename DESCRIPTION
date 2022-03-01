@@ -68,6 +68,7 @@ Imports:
     remotes,
     targets
 Suggests: 
+    testthat (>= 3.0.0),
     cranlogs,
     haven,
     rprojroot
@@ -83,3 +84,4 @@ Remotes:
     rstudio/pagedown,    
     hadley/emo,
     InseeFrLab/doremifasolData@v0.2.0
+Config/testthat/edition: 3
