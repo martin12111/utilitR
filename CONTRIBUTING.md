@@ -8,7 +8,7 @@ Il est possible de contribuer au projet `utilitR` de différentes manières, dé
 des contributeurs actuels, fonctionnement qui est orchestré autour de `Github` et de ses différents outils.
 Il est possible d'en acquérir très rapidement les bases à partir de ce document présentant le [Travail collaboratif avec `R`](https://linogaliana.gitlab.io/collaboratif/git.html#des-bases-de-git), ou à partir d'échanges avec les contributeurs actuels.
 
-Un environnement prêt à l'emploi pour l'exécution des scripts est disponible sur le `SSPCloud`. En cliquant sur le lien suivant, un service `RStudio` avec l'ensemble des dépendances nécessaires pour utiliser la documentation est disponible: [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=R)](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/rstudio?onyxia.friendlyName=%C2%ABrstudio-utilitr%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2FutilitR%2Fmaster%2Fresources%2Finit_9juin.sh%C2%BB&service.image.version=%C2%ABinseefrlab%2Futilitr%3A0.7.0%C2%BB)
+Un environnement prêt à l'emploi pour l'exécution des scripts est disponible sur le `SSPCloud`. En cliquant sur le lien suivant, un service `RStudio` avec l'ensemble des dépendances nécessaires pour utiliser la documentation est disponible: [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=R)](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/rstudio?onyxia.friendlyName=%C2%ABrstudio-utilitr%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2FutilitR%2Fmaster%2Fresources%2Finit_9juin.sh%C2%BB&service.image.version=%C2%ABinseefrlab%2Futilitr%3A0.8.0%C2%BB)
 
 Pour les relecteurs quelques notions de l'environnement `Github` suffisent
 (ou peuvent s'acquérir facilement) pour apporter sa pierre à l'édifice.
@@ -52,16 +52,19 @@ permet de proposer, automatiquement, des modifications via l'interface de
 `Github`. 
 
 Dans le menu du document, il faut d'abord se placer dans la fiche à
-relire et ensuite cliquer sur le bouton `Edit`, en haut à gauche.
-Un lien s'ouvre automatiquement sur la fiche `.Rmd` et permet d'éditer le
-contenu depuis `Github`. Cette fonctionnalité est utilisable même
-lorsque vous n'avez pas les droits en écriture sur le dépôt (droits attachés
-au statut de *mainteneur* sur le projet):
+relire et ensuite cliquer sur le bouton `Edit`, en haut à gauche :
 
 ![](./pics/contributing/edit_bs4.png)
 
-En cliquant dessus, on se retrouve sur une interface permettant d'éditer 
-de visualiser et proposer des modifications du fichier source. 
+Un lien s'ouvre automatiquement sur la fiche `.Rmd` et permet d'éditer le
+contenu depuis `Github`. Cette fonctionnalité est utilisable même
+lorsque vous n'avez pas les droits en écriture sur le dépôt (droits attachés
+au statut de *mainteneur* sur le projet), grâce à la notion de [*fork*](https://github.com/InseeFrLab/utilitr-bonnes-pratiques/edit/master/CONTRIBUTING.md#one-forker-le-d%C3%A9p%C3%B4t-utilitr).
+
+A l'ouverture du lien, s'il n'existe pas de fork du projet sur son compte, un pop-up s'ouvre pour indiquer qu'il faut en créer un pour pouvoir proposer des modifications : en acceptant, un fork est créé automatiquement.
+
+On se retrouve alors sur une interface permettant d'éditer,
+de visualiser et de proposer des modifications du fichier source. 
 
 ![](./pics/contributing/edit2.png)
 
@@ -231,7 +234,7 @@ Pour contribuer à `utilitR`, il est possible de créer un service RStudio enti�
 
 ![](./pics/contributing/creation_service_utilitr.png)
 
-Une autre solution consiste à lancer le service directement via [ce lien](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/rstudio?onyxia.friendlyName=%C2%AButilitr%C2%BB&service.image.version=%C2%ABinseefrlab%2Futilitr%3A0.7.0%C2%BB).
+Une autre solution consiste à lancer le service directement via [ce lien](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/rstudio?onyxia.friendlyName=%C2%AButilitr%C2%BB&service.image.version=%C2%ABinseefrlab%2Futilitr%3A0.8.0%C2%BB).
 
 #### Configurer l'accès au dépôt distant Github : la méthode simple et sécurisée
 
@@ -266,7 +269,7 @@ de la manière suivante :
 
 ![](./pics/contributing/mes_secrets_utilitr.png)
 
-On peut ensuite lancer le [service configuré dans ce lien](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/rstudio?onyxia.friendlyName=%C2%AButilitr-contrib%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2FutilitR%2Fmaster%2Finit_utilitr.sh%C2%BB&service.image.version=%C2%ABinseefrlab%2Futilitr%3A0.7.0%C2%BB&vault.secret=%C2%AButilitr%2Futilitr%C2%BB) pour obtenir un service avec une identification persistante.
+On peut ensuite lancer le [service configuré dans ce lien](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/rstudio?onyxia.friendlyName=%C2%AButilitr-contrib%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2FutilitR%2Fmaster%2Finit_utilitr.sh%C2%BB&service.image.version=%C2%ABinseefrlab%2Futilitr%3A0.8.0%C2%BB&vault.secret=%C2%AButilitr%2Futilitr%C2%BB) pour obtenir un service avec une identification persistante.
 
 ### :one: Forker le dépôt `utilitR`
 
